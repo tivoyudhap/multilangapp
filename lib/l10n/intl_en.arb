@@ -1,0 +1,29 @@
+{
+  "@@last_modified": "2019-12-25T15:29:51.595439",
+  "helloWorld": "Hello world!",
+  "@helloWorld": {
+    "description": "For hello world",
+    "type": "text",
+    "placeholders": {}
+  },
+  "title": "To Do List App!",
+  "@title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notePlaceholder": "Input your note",
+  "@notePlaceholder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "submit": "Submit",
+  "@submit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "youHaveClicked": "You've clicked: ",
+    "@youHaveClicked": {
+      "type": "text",
+      "placeholders": {}
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "@@last_modified": "2019-12-25T15:29:51.595439",
+  "helloWorld": "Halo dunia!",
+  "@helloWorld": {
+    "description": "Untuk hello world",
+    "type": "text",
+    "placeholders": {}
+  },
+  "title": "Aplikasi To Do List!",
+  "@title": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notePlaceholder": "Masukkan catatanmu",
+  "@notePlaceholder": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "submit": "Kirim",
+  "@submit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "youHaveClicked": "Kamu telah menekan tombol sebanyak: ",
+    "@youHaveClicked": {
+      "type": "text",
+      "placeholders": {}
+    }
+}
