@@ -33,42 +33,55 @@ class HomeScreenStateful extends StatefulWidget {
 }
 
 class HomeScreenState extends State<HomeScreenStateful> {
+
+  MyLocalizationDelegate delegate = new MyLocalizationDelegate(Locale('en', 'US'));
   int numberOfClick = 0;
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(title: Text("Home")),
-        body: SafeArea(
-          child: Column(
-            children: <Widget>[
-              Text('${MyLocalization.of(context).youHaveClicked} $numberOfClick'),
-              Text(MyLocalization.of(context).helloWorld),
-              Text(MyLocalization.of(context).notePlaceholder),
-              Row(
-                children: <Widget>[
-                  RaisedButton(child: Text("English"), onPressed: () {
-                    setState(() {
-                      MyLocalization.load(Locale('en', 'US'));
-                    });
-                  }),
-                  RaisedButton(child: Text("Indonesia"), onPressed: () {
-                    setState(() {
-                      MyLocalization.load(Locale('id', 'ID'));
-                    });
-                  })
-                ],
-              )
-            ],
+    return MaterialApp(
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        delegate
+      ],
+      supportedLocales: [
+        Locale('en', 'US'),
+        Locale('id', 'ID')
+      ],
+      home: Scaffold(
+          appBar: AppBar(title: Text("Home")),
+          body: SafeArea(
+            child: Column(
+              children: <Widget>[
+                Text('${MyLocalization.of(context).youHaveClicked} $numberOfClick'),
+                Text(MyLocalization.of(context).helloWorld),
+                Text(MyLocalization.of(context).notePlaceholder),
+                Row(
+                  children: <Widget>[
+                    RaisedButton(child: Text("English"), onPressed: () {
+                      setState(() {
+                        MyLocalization.load(Locale('en', 'US'));
+                      });
+                    }),
+                    RaisedButton(child: Text("Indonesia"), onPressed: () {
+                      setState(() {
+                        MyLocalization.load(Locale('id', 'ID'));
+                      });
+                    })
+                  ],
+                )
+              ],
+            ),
           ),
-        ),
-        floatingActionButton: FloatingActionButton(
-            tooltip: "Add data",
-            child: Icon(Icons.add),
-            onPressed: () {
-              setState(() {
-                numberOfClick++;
-              });
-            }));
+          floatingActionButton: FloatingActionButton(
+              tooltip: "Add data",
+              child: Icon(Icons.add),
+              onPressed: () {
+                setState(() {
+                  numberOfClick++;
+                });
+              })),
+    );
   }
 }
