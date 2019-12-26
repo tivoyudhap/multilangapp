@@ -25,5 +25,10 @@
     "@youHaveClicked": {
       "type": "text",
       "placeholders": {}
-    }
+  },
+  "home": "Rumah",
+  "@home": {
+     "type": "text",
+     "placeholders": {}
+  }
 }

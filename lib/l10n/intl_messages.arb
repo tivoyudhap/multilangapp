@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2019-12-25T16:16:32.131787",
+  "@@last_modified": "2019-12-26T11:43:12.633980",
   "helloWorld": "Hello world!",
   "@helloWorld": {
     "description": "For hello world",
@@ -23,6 +23,11 @@
   },
   "youHaveClicked": "You've clicked: ",
   "@youHaveClicked": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "home": "Home",
+  "@home": {
     "type": "text",
     "placeholders": {}
   }

@@ -50,7 +50,7 @@ class HomeScreenState extends State<HomeScreenStateful> {
         Locale('id', 'ID')
       ],
       home: Scaffold(
-          appBar: AppBar(title: Text("Home")),
+          appBar: AppBar(title: Text(MyLocalization.of(context).home)),
           body: SafeArea(
             child: Column(
               children: <Widget>[
