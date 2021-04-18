@@ -1,6 +1,6 @@
-# to_do_list_app
+# multi language app example.
 
-A new Flutter application.
+This is simple multi language mobile app build with Flutter, using intl_translation dependencies.
 
 ## Getting Started
 
@@ -14,3 +14,8 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## How To Build
+- Run with Android Studio
+- run flutter pub get
+- run project to your Android / iOS device.
